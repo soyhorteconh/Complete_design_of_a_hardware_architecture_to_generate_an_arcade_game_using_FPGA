@@ -1,0 +1,245 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -14.195
+TNS   : -24691.428
+
+Type  : Slow 1200mV 85C Model Setup 'vga_9:vga|c[2]'
+Slack : -12.502
+TNS   : -32.958
+
+Type  : Slow 1200mV 85C Model Setup 'vga_9:vga|clk_fsm'
+Slack : -6.503
+TNS   : -320.618
+
+Type  : Slow 1200mV 85C Model Setup 'vga_9:vga|clk_vga'
+Slack : -6.072
+TNS   : -62.440
+
+Type  : Slow 1200mV 85C Model Setup 'vga_9:vga|cont[0]'
+Slack : -4.602
+TNS   : -6.065
+
+Type  : Slow 1200mV 85C Model Setup 'vga_9:vga|Hsync'
+Slack : -3.297
+TNS   : -48.045
+
+Type  : Slow 1200mV 85C Model Hold 'vga_9:vga|c[2]'
+Slack : -3.321
+TNS   : -4.897
+
+Type  : Slow 1200mV 85C Model Hold 'vga_9:vga|Hsync'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'vga_9:vga|clk_fsm'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'vga_9:vga|clk_vga'
+Slack : 0.621
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'vga_9:vga|cont[0]'
+Slack : 0.980
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'vga_9:vga|c[2]'
+Slack : -4.388
+TNS   : -12.623
+
+Type  : Slow 1200mV 85C Model Removal 'vga_9:vga|c[2]'
+Slack : 0.503
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -3305.662
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'vga_9:vga|c[2]'
+Slack : -2.394
+TNS   : -41.326
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'vga_9:vga|clk_fsm'
+Slack : -1.403
+TNS   : -103.822
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'vga_9:vga|clk_vga'
+Slack : -1.403
+TNS   : -30.866
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'vga_9:vga|Hsync'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'vga_9:vga|cont[0]'
+Slack : 0.398
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -13.071
+TNS   : -22656.503
+
+Type  : Slow 1200mV 0C Model Setup 'vga_9:vga|c[2]'
+Slack : -11.648
+TNS   : -30.633
+
+Type  : Slow 1200mV 0C Model Setup 'vga_9:vga|clk_fsm'
+Slack : -5.819
+TNS   : -288.227
+
+Type  : Slow 1200mV 0C Model Setup 'vga_9:vga|clk_vga'
+Slack : -5.510
+TNS   : -55.198
+
+Type  : Slow 1200mV 0C Model Setup 'vga_9:vga|cont[0]'
+Slack : -4.285
+TNS   : -5.686
+
+Type  : Slow 1200mV 0C Model Setup 'vga_9:vga|Hsync'
+Slack : -2.926
+TNS   : -41.781
+
+Type  : Slow 1200mV 0C Model Hold 'vga_9:vga|c[2]'
+Slack : -2.950
+TNS   : -4.350
+
+Type  : Slow 1200mV 0C Model Hold 'vga_9:vga|Hsync'
+Slack : 0.288
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'vga_9:vga|clk_fsm'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'vga_9:vga|clk_vga'
+Slack : 0.574
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'vga_9:vga|cont[0]'
+Slack : 0.912
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'vga_9:vga|c[2]'
+Slack : -4.162
+TNS   : -11.984
+
+Type  : Slow 1200mV 0C Model Removal 'vga_9:vga|c[2]'
+Slack : 0.469
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -3305.662
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|c[2]'
+Slack : -2.190
+TNS   : -36.981
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|clk_fsm'
+Slack : -1.403
+TNS   : -103.822
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|clk_vga'
+Slack : -1.403
+TNS   : -30.866
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|Hsync'
+Slack : -1.403
+TNS   : -29.463
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|cont[0]'
+Slack : 0.443
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -5.703
+TNS   : -9513.016
+
+Type  : Fast 1200mV 0C Model Setup 'vga_9:vga|c[2]'
+Slack : -4.685
+TNS   : -12.006
+
+Type  : Fast 1200mV 0C Model Setup 'vga_9:vga|clk_fsm'
+Slack : -2.070
+TNS   : -95.159
+
+Type  : Fast 1200mV 0C Model Setup 'vga_9:vga|clk_vga'
+Slack : -1.967
+TNS   : -17.620
+
+Type  : Fast 1200mV 0C Model Setup 'vga_9:vga|cont[0]'
+Slack : -1.290
+TNS   : -1.404
+
+Type  : Fast 1200mV 0C Model Setup 'vga_9:vga|Hsync'
+Slack : -0.851
+TNS   : -10.946
+
+Type  : Fast 1200mV 0C Model Hold 'vga_9:vga|c[2]'
+Slack : -1.629
+TNS   : -2.491
+
+Type  : Fast 1200mV 0C Model Hold 'vga_9:vga|Hsync'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'vga_9:vga|clk_fsm'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'vga_9:vga|clk_vga'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'vga_9:vga|cont[0]'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'vga_9:vga|c[2]'
+Slack : -1.690
+TNS   : -4.844
+
+Type  : Fast 1200mV 0C Model Removal 'vga_9:vga|c[2]'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -2442.803
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|clk_fsm'
+Slack : -1.000
+TNS   : -74.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|clk_vga'
+Slack : -1.000
+TNS   : -22.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|Hsync'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|c[2]'
+Slack : -0.738
+TNS   : -11.368
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'vga_9:vga|cont[0]'
+Slack : 0.311
+TNS   : 0.000
+
+------------------------------------------------------------

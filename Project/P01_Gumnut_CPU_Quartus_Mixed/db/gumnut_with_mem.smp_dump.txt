@@ -1,0 +1,15 @@
+
+State Machine - |de10lite|vga_9:vga|pr_state_9
+Name pr_state_9.state_3_9 pr_state_9.state_2_9 pr_state_9.state_1_9 
+pr_state_9.state_1_9 0 0 0 
+pr_state_9.state_2_9 0 1 1 
+pr_state_9.state_3_9 1 0 1 
+
+State Machine - |de10lite|gumnut_with_mem:gumnut|gumnut:core|state
+Name state.int_state state.write_back_state state.mem_state state.execute_state state.decode_state state.fetch_state 
+state.fetch_state 0 0 0 0 0 0 
+state.decode_state 0 0 0 0 1 1 
+state.execute_state 0 0 0 1 0 1 
+state.mem_state 0 0 1 0 0 1 
+state.write_back_state 0 1 0 0 0 1 
+state.int_state 1 0 0 0 0 1 

@@ -1,0 +1,396 @@
+Analysis & Elaboration report for gumnut_with_mem
+Wed Mar 16 13:53:01 2022
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: gumnut_with_mem:gumnut
+  5. Parameter Settings for User Entity Instance: gumnut_with_mem:gumnut|gumnut:core
+  6. Parameter Settings for User Entity Instance: vga_9:vga
+  7. Analysis & Elaboration Settings
+  8. Port Connectivity Checks: "vga_9:vga"
+  9. Port Connectivity Checks: "gumnut_with_mem:gumnut"
+ 10. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                   ;
++------------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Wed Mar 16 13:53:01 2022       ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name                      ; gumnut_with_mem                             ;
+; Top-level Entity Name              ; de10lite                                    ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: gumnut_with_mem:gumnut ;
++----------------+---------------+------------------------------------+
+; Parameter Name ; Value         ; Type                               ;
++----------------+---------------+------------------------------------+
+; imem_file_name ; gasm_text.dat ; String                             ;
+; dmem_file_name ; gasm_data.dat ; String                             ;
+; debug          ; false         ; Enumerated                         ;
++----------------+---------------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: gumnut_with_mem:gumnut|gumnut:core ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; debug          ; false ; Enumerated                                             ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: vga_9:vga ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; H_LOW          ; 96    ; Signed Integer                ;
+; HBP            ; 48    ; Signed Integer                ;
+; H_HIGH         ; 640   ; Signed Integer                ;
+; HFP            ; 16    ; Signed Integer                ;
+; V_LOW          ; 2     ; Signed Integer                ;
+; VBP            ; 33    ; Signed Integer                ;
+; V_HIGH         ; 480   ; Signed Integer                ;
+; VFP            ; 10    ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                            ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; de10lite           ; gumnut_with_mem    ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "vga_9:vga"                                                                                                                                     ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                      ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; blankn ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; syncn  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
+; btn    ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gumnut_with_mem:gumnut"                                                                         ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; port_ack_i       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; port_dat_i[7..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; int_ack          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Wed Mar 16 13:52:43 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off gumnut_with_mem -c gumnut_with_mem --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file decoder_equipo9.vhd
+    Info (12022): Found design unit 1: DECODER_equipo9-behavior File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/DECODER_equipo9.vhd Line: 16
+    Info (12023): Found entity 1: DECODER_equipo9 File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/DECODER_equipo9.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file de10lite.vhd
+    Info (12022): Found design unit 1: de10lite-behavior File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 20
+    Info (12023): Found entity 1: de10lite File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file vga_interface.vhd
+    Info (12022): Found design unit 1: vga_interface-rtl File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_interface.vhd Line: 25
+    Info (12023): Found entity 1: vga_interface File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_interface.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file inst_mem.v
+    Info (12023): Found entity 1: inst_mem File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/inst_mem.v Line: 1
+Info (12021): Found 1 design units, including 0 entities, in source file gumnut-rtl_unpipelined.vhd
+    Info (12022): Found design unit 1: gumnut-rtl_unpipelined File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gumnut-rtl_unpipelined.vhd Line: 5
+Info (12021): Found 1 design units, including 0 entities, in source file gumnut_with_mem-struct.vhd
+    Info (12022): Found design unit 1: gumnut_with_mem-struct File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gumnut_with_mem-struct.vhd Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file gumnut_with_mem.vhd
+    Info (12023): Found entity 1: gumnut_with_mem File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gumnut_with_mem.vhd Line: 4
+Info (12021): Found 2 design units, including 0 entities, in source file gumnut_defs.vhd
+    Info (12022): Found design unit 1: gumnut_defs File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gumnut_defs.vhd Line: 4
+    Info (12022): Found design unit 2: gumnut_defs-body File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gumnut_defs.vhd Line: 85
+Info (12021): Found 1 design units, including 1 entities, in source file gumnut.vhd
+    Info (12023): Found entity 1: gumnut File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gumnut.vhd Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file data_mem.v
+    Info (12023): Found entity 1: data_mem File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/data_mem.v Line: 1
+Info (12021): Found 2 design units, including 1 entities, in source file vga_9.vhd
+    Info (12022): Found design unit 1: vga_9-rtl File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 36
+    Info (12023): Found entity 1: vga_9 File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 13
+Info (12127): Elaborating entity "de10lite" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at de10lite.vhd(59): used implicit default value for signal "int_req" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 59
+Warning (10036): Verilog HDL or VHDL warning at de10lite.vhd(62): object "int_ack" assigned a value but never read File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 62
+Warning (10036): Verilog HDL or VHDL warning at de10lite.vhd(67): object "BLANKn" assigned a value but never read File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 67
+Warning (10036): Verilog HDL or VHDL warning at de10lite.vhd(67): object "SYNCn" assigned a value but never read File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 67
+Warning (10873): Using initial value X (don't care) for net "LEDR[9..8]" at de10lite.vhd(16) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 16
+Warning (10873): Using initial value X (don't care) for net "port_dat_i[7..2]" at de10lite.vhd(63) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 63
+Info (12128): Elaborating entity "gumnut_with_mem" for hierarchy "gumnut_with_mem:gumnut" File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 79
+Info (12128): Elaborating entity "gumnut" for hierarchy "gumnut_with_mem:gumnut|gumnut:core" File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gumnut_with_mem-struct.vhd Line: 79
+Info (12128): Elaborating entity "inst_mem" for hierarchy "gumnut_with_mem:gumnut|inst_mem:core_inst_mem" File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gumnut_with_mem-struct.vhd Line: 105
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(1): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 1
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(17): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 17
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(18): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 18
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(19): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 19
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(20): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 20
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(21): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 21
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(22): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 22
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(23): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 23
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(24): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 24
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(25): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 25
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(26): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 26
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(28): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 28
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(30): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 30
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(31): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 31
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(32): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 32
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(33): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 33
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(35): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 35
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(36): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 36
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(37): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 37
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(38): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 38
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(41): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 41
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(42): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 42
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(43): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 43
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(49): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 49
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(52): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 52
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(55): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 55
+Warning (10230): Verilog HDL assignment warning at gasm_text.dat(56): truncated value with size 20 to match size of target (18) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gasm_text.dat Line: 56
+Warning (10030): Net "IMem.data_a" at inst_mem.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/inst_mem.v Line: 8
+Warning (10030): Net "IMem.waddr_a" at inst_mem.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/inst_mem.v Line: 8
+Warning (10030): Net "IMem.we_a" at inst_mem.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/inst_mem.v Line: 8
+Info (12128): Elaborating entity "data_mem" for hierarchy "gumnut_with_mem:gumnut|data_mem:core_data_mem" File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/gumnut_with_mem-struct.vhd Line: 114
+Info (12128): Elaborating entity "vga_9" for hierarchy "vga_9:vga" File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(194): signal "cont" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 194
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(194): signal "puntaje" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 194
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(196): signal "cont" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 196
+Warning (10631): VHDL Process Statement warning at vga_9.vhd(181): inferring latch(es) for signal or variable "nx_state_9", which holds its previous value in one or more paths through the process File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 181
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(291): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 291
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(292): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 292
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(293): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 293
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(294): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 294
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(295): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 295
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(296): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 296
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(297): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 297
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(298): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 298
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(299): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 299
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(300): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 300
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(383): signal "clk_vga" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 383
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(396): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 396
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(401): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 401
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(401): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 401
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(406): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 406
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(406): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 406
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(418): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 418
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(423): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 423
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(423): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 423
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(428): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 428
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(428): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 428
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(440): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 440
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(445): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 445
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(445): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 445
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(450): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 450
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(450): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 450
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(462): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 462
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(467): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 467
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(467): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 467
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(472): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 472
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(472): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 472
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(484): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 484
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(489): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 489
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(489): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 489
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(494): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 494
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(494): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 494
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(506): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 506
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(511): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 511
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(511): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 511
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(516): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 516
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(516): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 516
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(528): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 528
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(533): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 533
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(533): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 533
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(538): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 538
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(538): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 538
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(550): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 550
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(555): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 555
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(555): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 555
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(560): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 560
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(560): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 560
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(572): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 572
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(577): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 577
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(577): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 577
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(582): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 582
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(582): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 582
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(594): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 594
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(599): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 599
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(599): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 599
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(604): signal "sw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 604
+Warning (10492): VHDL Process Statement warning at vga_9.vhd(604): signal "and1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 604
+Warning (10631): VHDL Process Statement warning at vga_9.vhd(282): inferring latch(es) for signal or variable "R", which holds its previous value in one or more paths through the process File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Warning (10631): VHDL Process Statement warning at vga_9.vhd(282): inferring latch(es) for signal or variable "G", which holds its previous value in one or more paths through the process File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Warning (10631): VHDL Process Statement warning at vga_9.vhd(282): inferring latch(es) for signal or variable "B", which holds its previous value in one or more paths through the process File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "B[0]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "B[1]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "B[2]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "B[3]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "G[0]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "G[1]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "G[2]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "G[3]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "R[0]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "R[1]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "R[2]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "R[3]" at vga_9.vhd(282) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 282
+Info (10041): Inferred latch for "nx_state_9.state_3_9" at vga_9.vhd(181) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 181
+Info (10041): Inferred latch for "nx_state_9.state_2_9" at vga_9.vhd(181) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 181
+Info (10041): Inferred latch for "nx_state_9.state_1_9" at vga_9.vhd(181) File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/vga_9.vhd Line: 181
+Info (12128): Elaborating entity "DECODER_equipo9" for hierarchy "DECODER_equipo9:hexa" File: C:/Users/usuario/Documents/HortenciaRamirez/Universidad/4toSemestre/DisenoLogicaProgramable/Gumnut/P01_Gumnut_CPU_Quartus_Mixed/de10lite.vhd Line: 114
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 106 warnings
+    Info: Peak virtual memory: 4776 megabytes
+    Info: Processing ended: Wed Mar 16 13:53:01 2022
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:29
+
+
